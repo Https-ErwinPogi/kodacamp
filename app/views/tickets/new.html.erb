@@ -1,0 +1,55 @@
+
+<div class="main-container">
+  <div class="container">
+    <div class="form-wrap">
+      <%= form_with model: @ticket do |form| %>
+        <% if @ticket.errors.any? %>
+          <ul>
+            <% @ticket.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        <% end %>
+        <div class="name-field">
+          <label for="name">Name</label>
+          <%= form.text_field :name %>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <%= form.text_field :email %>
+        </div>
+        <div>
+          <label for="age">Age</label>
+          <%= form.number_field :age %>
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <%= form.text_field :country %>
+        </div>
+
+        <div class="btn">
+        <%= form.submit 'Submit', class: 'test' %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="receipt-container">
+      <h1>Online Ticketing Sytem</h1>
+      <p>Address:</p>
+      <p>telephone:</p>
+      <hr>
+      <div id="receipt">
+        <ul>
+          <li><%= @tickets.name %></li>
+          <li><%= @tickets.email %></li>
+          <li><%= @tickets.age %></li>
+          <li><%= @tickets.country %></li>
+        </ul>
+
+        </div>
+      <hr>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.container{
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .form-wrap{
+    width: 45%;
+    padding: 40px;
+    border: #666666 solid 1px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 70%) 0 3px 8px;
+
+}
+
+.form-wrap label{
+    margin-bottom: 20px;
+}
+
+.form-wrap input{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto 20px 0;
+}
+
+.form-wrap input{
+
+}
+
+.receipt-container{
+    width: 45%;
+    padding: 40px;
+    border: rgb(0 0 0 / 20%) 1px;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 20%) 0 3px 8px;
+    background: #f1f1f1;
+}
+
+
+.receipt-container table thead{
+
+}
+
+.receipt-container tr,td{
+    padding: 5px 30px;
+}
+
+hr{
+    border-top: 1px dashed black;
+}
+
+.receipt-container #receipt ul li{
+    list-style: none;
+}
+
