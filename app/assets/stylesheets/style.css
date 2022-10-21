@@ -37,7 +37,8 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-
+    line-height: 30px;
+    background: #730E15;
 }
 
 .receipt-container #ticket-wrap{
@@ -52,7 +53,7 @@
 }
 
 #ticket-wrap:before{
-    background: linear-gradient(45deg, #ffffff 16px, transparent 0), linear-gradient(-45deg, #ffffff 16px, transparent 0);
+    background: linear-gradient(45deg, #730E15 16px, transparent 0), linear-gradient(-45deg, #730E15 16px, transparent 0);
     background-position: left top;
     background-repeat: repeat-x;
     background-size: 32px 32px;
@@ -72,12 +73,17 @@
 
 }
 
+
+
 .receipt-container #ticket-wrap .content h2{
     text-align: center;
 }
+.receipt-container #ticket-wrap .content #header-receipt{
+    text-align: center;
+}
 
-receipt-container #ticket-wrap .content #date{
-
+receipt-container #ticket-wrap .content .receipt-content{
+    text-align: right;
 }
 
 .barcode{

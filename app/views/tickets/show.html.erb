@@ -2,21 +2,25 @@
   <div id="ticket-wrap">
 
     <div class="content">
-    <h2>Receipt</h2>
-      <p>Address: #123 Jan lang sa tabi-tabi st.</p>
-      <p>Telephone No: 861-1512</p>
+      <div id="header-receipt">
+        <h2>Receipt</h2>
+        <p>Address: #123 Jan lang sa tabi-tabi st.</p>
+        <p>Telephone No: 861-1512</p>
+      </div>
 
-    <hr>
-      <p id="date"><%= @ticket.created_at %></p>
-      <p class="info"><%= @ticket.name %></p>
-      <p class="info"><%= @ticket.email %></p>
-      <p class="info"><%= @ticket.age %></p>
-      <p class="info"><%= @ticket.country %></p>
+      <hr>
+      <div class="receipt-content">
+        <p id="date"><%= @ticket.created_at %></p>
+        <p class="info"><%= @ticket.name %></p>
+        <p class="info"><%= @ticket.email %></p>
+        <p class="info"><%= @ticket.age %></p>
+        <p class="info"><%= @ticket.country %></p>
+      </div>
 
 
-    <hr>
+      <hr>
 
-    <h2>Thank you!</h2>
+      <h2>Thank you!</h2>
 
       <div class="barcode">
         <span class="lg-l"></span>
@@ -50,6 +54,9 @@
         <span class="xs-l"></span>
         <span class="xs-l"></span>
 
+        <p>
+          <%= link_to 'Ok', tickets_path %>
+        </p>
       </div>
     </div>
   </div>

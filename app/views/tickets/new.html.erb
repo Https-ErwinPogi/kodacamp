@@ -1,38 +1,40 @@
 <div class="container">
-    <div class="form-wrap">
-      <%= form_with model: @ticket do |form| %>
-        <% if @ticket.errors.any? %>
-          <ul>
-            <% @ticket.errors.each do |error| %>
-              <li><%= error.full_message %></li>
-            <% end %>
-          </ul>
-        <% end %>
-        <div class="name-field">
-          <label for="name">Name</label>
-          <%= form.text_field :name %>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <%= form.text_field :email %>
-        </div>
-        <div>
-          <label for="age">Age</label>
-          <%= form.number_field :age %>
-        </div>
-
-        <div>
-          <label for="country">Country</label>
-          <%= form.text_field :country %>
-        </div>
-
-        <div>
-          <%= form.date_field :date%>
-        </div>
-
-        <div class="btn">
-        <%= form.submit 'Book', class: 'test' %>
-        </div>
+  <div class="form-wrap">
+    <%= form_with model: @ticket do |form| %>
+      <% if @ticket.errors.any? %>
+        <ul>
+          <% @ticket.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
       <% end %>
-    </div>
+      <div class="name-field">
+        <label for="name">Name</label>
+        <%= form.text_field :name %>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <%= form.text_field :email %>
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <%= form.number_field :age %>
+      </div>
+
+      <div>
+        <label for="country">Country</label>
+        <%= form.text_field :country %>
+      </div>
+
+      <div>
+        <%= form.date_field :date %>
+      </div>
+
+      <div class="btn">
+        <%= form.submit 'Book', class: 'test' %>
+      </div>
+    <% end %>
+
+    <%= link_to 'Back', tickets_path %>
+  </div>
 </div>

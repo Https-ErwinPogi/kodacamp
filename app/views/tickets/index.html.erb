@@ -1,30 +1,30 @@
 <div class="list-container">
-<h1>Customer Lists</h1>
+  <h1>Customer Lists</h1>
 
-      <table id="customers">
-        <thead>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Age</th>
-        <th>Country</th>
-        <th>Actions</th>
-        </thead>
-        <% @tickets.each do |ticket| %>
-          <tr>
-            <td><%= ticket.name %></td>
-            <td><%= ticket.email %></td>
-            <td><%= ticket.age %></td>
-            <td><%= ticket.country %></td>
-            <td>
-              <%= link_to 'Show', ticket_path(ticket) %>
-              <%= link_to 'Edit', edit_ticket_path(ticket) %>
-              <%= button_to 'Delete', ticket_path(ticket), method: :delete %>
-            </td>
-          </tr>
-        <% end %>
-      </table>
+  <table id="customers">
+    <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Age</th>
+    <th>Country</th>
+    <th>Actions</th>
+    </thead>
+    <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.name %></td>
+        <td><%= ticket.email %></td>
+        <td><%= ticket.age %></td>
+        <td><%= ticket.country %></td>
+        <td>
+          <%= link_to 'Show', ticket_path(ticket) %>
+          <%= link_to 'Edit', edit_ticket_path(ticket) %>
+          <%= button_to 'Delete', ticket_path(ticket), method: :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
 
-      <div class="create-new">
-        <%= link_to 'Book', new_ticket_path, class: "create" %>
-      </div>
+  <div class="create-new">
+    <%= link_to 'Book', new_ticket_path, class: "create" %>
+  </div>
 </div>
