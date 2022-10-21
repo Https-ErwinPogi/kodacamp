@@ -1,6 +1,4 @@
-
-<div class="main-container">
-  <div class="container">
+<div class="container">
     <div class="form-wrap">
       <%= form_with model: @ticket do |form| %>
         <% if @ticket.errors.any? %>
@@ -22,34 +20,19 @@
           <label for="age">Age</label>
           <%= form.number_field :age %>
         </div>
+
         <div>
           <label for="country">Country</label>
           <%= form.text_field :country %>
         </div>
 
+        <div>
+          <%= form.date_field :date%>
+        </div>
+
         <div class="btn">
-        <%= form.submit 'Submit', class: 'test' %>
+        <%= form.submit 'Book', class: 'test' %>
         </div>
       <% end %>
     </div>
-
-    <div class="receipt-container">
-      <h1>Online Ticketing Sytem</h1>
-      <p>Address:</p>
-      <p>telephone:</p>
-      <hr>
-      <div id="receipt">
-        <ul>
-          <li><%= @tickets.name %></li>
-          <li><%= @tickets.email %></li>
-          <li><%= @tickets.age %></li>
-          <li><%= @tickets.country %></li>
-        </ul>
-
-        </div>
-      <hr>
-
-
-    </div>
-  </div>
 </div>

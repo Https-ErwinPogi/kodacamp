@@ -1,0 +1,2 @@
+class AddDeleteAtToPost < ApplicationRecord
+end

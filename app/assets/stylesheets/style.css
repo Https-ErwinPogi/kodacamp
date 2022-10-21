@@ -1,22 +1,21 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
-
     padding: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container .form-wrap{
-    width: 45%;
+    flex-basis: 40%;
     padding: 40px;
     border: #666666 solid 1px;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 70%) 0 3px 8px;
-
+    box-shadow: rgb(0 0 0 / 50%) 0 1px 8px;
 }
 
 .form-wrap label{
@@ -29,33 +28,140 @@
     margin: 0 auto 20px 0;
 }
 
-.form-wrap input{
+
+
+
+/* Show Page */
+
+.receipt-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 
 }
 
-.receipt-container{
-    width: 45%;
-    padding: 40px;
+.receipt-container #ticket-wrap{
+    flex-basis: 20rem;
+    min-height: 500px;
+    padding: 20px;
+    border: #666666 solid 1px;
     border: rgb(0 0 0 / 20%) 1px;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 20%) 0 3px 8px;
     background: #f1f1f1;
+    position: relative;
+}
+
+#ticket-wrap:before{
+    background: linear-gradient(45deg, #ffffff 16px, transparent 0), linear-gradient(-45deg, #ffffff 16px, transparent 0);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+.receipt-container #ticket-wrap .content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.receipt-container #ticket-wrap .content h2{
+    text-align: center;
+}
+
+receipt-container #ticket-wrap .content #date{
+
+}
+
+.barcode{
+    text-align: center;
+}
+span {
+    height: 100px;
+    margin-left: 2px;
+}
+
+.xs-l{
+    border-left: 1px solid black;
+}
+.sm-l{
+    border-left: 2px solid black;
+}
+
+.md-l{
+    border-left: 4px solid black;
+}
+
+.lg-l{
+    border-left: 6px solid black;
+}
+
+.xl-l{
+    border-left: 8px solid black;
 }
 
 
-.receipt-container table thead{
+/* Index Table */
 
+.list-container h1{
+    text-align: center;
 }
 
-.receipt-container tr,td{
-    padding: 5px 30px;
+#customers{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #666666;
+    color: white;
+}
+
+.create-new{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.create-new .create{
+    background-color: #666666;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.create-new .create:hover{
+    background-color: #f2f2f2;
+    color: #666666;
+    border: 1px solid #666666;
+
 }
 
 hr{
     border-top: 1px dashed black;
 }
 
-.receipt-container #receipt ul li{
-    list-style: none;
-}
 
