@@ -11,6 +11,9 @@
   </head>
 
   <body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <p><%= "hi! #{current_user.email}" if current_user %></p>
     <%= yield %>
   </body>
 </html>
