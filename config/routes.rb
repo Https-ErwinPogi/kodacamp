@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 
   resources :categories
 
-
+  # project ticket
   resources :tickets
 
 end
