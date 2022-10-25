@@ -1,0 +1,2 @@
+class AddUserIdToComment < ApplicationRecord
+end
