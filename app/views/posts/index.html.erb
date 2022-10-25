@@ -1,6 +1,7 @@
+<div class="list-containers">
 <h1>Post List</h1>
 
-<table>
+<table id="customers">
   <thead>
   <tr>
     <th>Title</th>
@@ -31,4 +32,8 @@
 </table>
 <%= paginate @posts %>
 
-<%= link_to 'New', new_post_path %>
+<div class="create-new">
+  <%= link_to 'New', new_post_path, class: "create" %>
+</div>
+
+</div>

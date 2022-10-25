@@ -1,0 +1,144 @@
+/**{*/
+/*    box-sizing: border-box;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    text-decoration: none;*/
+/*}*/
+/*body{*/
+/*    font-family: 'Raleway', SansSerif, Arial, Helvetica, sans-serif;*/
+/*    line-height: 1.8;*/
+/*    background-color: #344a72;*/
+
+/*}*/
+
+.container-form{
+    max-width: 400px;
+    padding: 20px;
+    margin: 30px auto;
+
+}
+
+#form-login{
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0 3px 8px;
+    color: #333333;
+}
+
+#form-login h2, p{
+    text-align: center;
+}
+/*h1{*/
+/*    font-weight: inherit;*/
+/*}*/
+
+/*.form-wrap a:hover{*/
+/*    text-decoration: underline;*/
+/*}*/
+
+#form-login .field{
+    margin-top: 15px;
+}
+#form-login .field label{
+    /*display: block;*/
+    margin-bottom: 10px;
+    color: #666;
+
+}
+
+#form-login .field input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+#form-login .field-remember{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+#form-login .field-remember input{
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+#form-login .btn{
+    display: block;
+    background-color: #49c1a2;
+    color: white;
+    border: none;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container-form #form-login .link-buttons {
+    text-align: center;
+    color: #49c1a2;
+}
+
+.container-form #form-login .link-buttons .forgot-link{
+    text-decoration: none;
+    color: #49c1a2;
+}
+
+.container-form #form-login .link-buttons .forgot-link:hover{
+    text-decoration: underline;
+    color: #49c1a2;
+}
+
+.container-form #form-login .link-buttons .create-acc-btn{
+    text-decoration: none;
+    display: block;
+    background-color: #49c1a2;
+    color: white;
+    border: none;
+    font-weight: bold;
+    width: 70%;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20px auto 10px auto;
+
+}
+
+.container-form #form-login .link-buttons #links-hr{
+    line-height: 21px;
+}
+
+/*.form-wrap button:hover{*/
+/*    background-color: #37a08e;*/
+/*    transition: background-color 0.7s;*/
+/*}*/
+
+/*.form-wrap .bot-text{*/
+/*    font-size: 13px;*/
+/*    margin-top: 20px;*/
+
+/*}*/
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+footer p{
+    color: black;
+}
+
+footer a{
+    color: #49c1a2;
+}
+
+footer a:hover{
+    color: #49c1a2;
+    text-decoration: underline;
+}
