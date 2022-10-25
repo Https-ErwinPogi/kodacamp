@@ -1,0 +1,2 @@
+class AddCommentsCountToPost < ApplicationRecord
+end
