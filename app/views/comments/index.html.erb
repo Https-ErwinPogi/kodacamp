@@ -9,6 +9,7 @@
   </li>
   <% end %>
 </ul>
+<%= paginate @comments %>
 
 <%= link_to 'New Comment', new_post_comment_path %>
 <%= link_to 'Post list', posts_path %>
